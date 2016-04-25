@@ -3,14 +3,14 @@
     Inicia o documento indicando a linguagem do conteúdo e a direção de leitura
 -->
 <html lang="pt-br" dir="ltr">
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
         <!--
         Seta a largura inicial da área do browser, a escala e se aceita zoom.
          - Referência na MDN: https://developer.mozilla.org/pt-BR/docs/Mozilla/Mobile/Viewport_meta_tag
         -->
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 
         <!--
         Otimização para sistema de buscas
@@ -33,13 +33,13 @@
             Me:             Mesmo funcionamento de Author porem no padrão XFN
                             http://gmpg.org/xfn/
         -->
-		<title>Marcus Maia</title>
+        <title>Marcus Maia</title>
         <meta name="description" content="Analista de sistemas especialista em tecnologias WEB e arquitetura de informação." />
         <meta name="keywords" content="Marcus Maia, Programação, PHP, Javascript, jQuery, Internet, Site, E-learning, ensino a distância, E-Commerce, E-Gov, usabilidade, UX, acessibilidade, interface" />
         <meta name="rating" content="general" />
         <meta name="robots" content="ALL" />
         <meta name="author" content="http://google.com/+marcusagm">
-		<link rel="me" href="http://google.com/+marcusagm" />
+        <link rel="me" href="http://google.com/+marcusagm" />
 
 
         <!--
@@ -59,13 +59,13 @@
             og:description      Descrição que irá aparecer ao ser compartilhado
             og:image            Imagem que irá aparecer junto ao link compartilhado
         -->
-		<meta property="og:site_name" content="Marcus Maia">
+        <meta property="og:site_name" content="Marcus Maia">
         <meta property="og:url" content="http://www.marcusmaia.com.br">
-		<meta property="og:type" content="website">
-		<meta property="og:locale" content="pt_BR">
-		<meta property="og:title" content="">
-		<meta property="og:description" content="Analista de sistemas especialista em tecnologias WEB e arquitetura de informação.">
-		<meta property="og:image" content="">
+        <meta property="og:type" content="website">
+        <meta property="og:locale" content="pt_BR">
+        <meta property="og:title" content="">
+        <meta property="og:description" content="Analista de sistemas especialista em tecnologias WEB e arquitetura de informação.">
+        <meta property="og:image" content="">
 
 
         <!--
@@ -73,13 +73,13 @@
         Otimização para compartilhamento no twitter.
          - Link de referências: https://dev.twitter.com/cards/overview
         -->
-		<meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@marcusagm">
         <meta name="twitter:creator" content="@marcusagm">
         <meta name="twitter:text:title" content="Marcus Maia">
         <meta name="twitter:title" content="Marcus Maia">
         <meta name="twitter:description" content="Analista de sistemas especialista em tecnologias WEB e arquitetura de informação.">
-		<meta property="twitter:image" content="">
+        <meta property="twitter:image" content="">
 
 
         <!--
@@ -87,7 +87,7 @@
          - Link de referência: http://tableless.com.br/favicons/
          - Gerador de favicons: http://www.favicon-generator.org/
         -->
-		<link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
         <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
         <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
         <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
@@ -136,7 +136,7 @@
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <!-- Font Awesome -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
 
         <!--
         Adicionando CSS alternativos
@@ -147,8 +147,8 @@
         <link rel="stylesheet" media="screen" href="screen.css" type="text/css" title="Tela comum">
         <link rel="stylesheet" media="print" href="print.css" type="text/css" title="Impressão">
         <link rel="alternate stylesheet" media="all" href="contrast.css" title="Alto contraste">
-	</head>
-	<body>
+    </head>
+    <body>
 
 
         <!-- Conteúdo da página -->
@@ -162,5 +162,5 @@
         <!-- Bootstrap -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-	</body>
+    </body>
 </html>
