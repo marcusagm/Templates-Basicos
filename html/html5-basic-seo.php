@@ -50,6 +50,7 @@
          - Link de referências do Facebook: https://developers.facebook.com/docs/sharing/webmasters
          - Link de referências do Google: https://developers.google.com/+/web/snippet/#frequently-asked-questions
          - Link para referência de meta tags : https://developer.mozilla.org/pt-PT/docs/utilizando_meta_tags
+        - Gerador: http://webcodetools.com/open-graph-generator
 
             og:site_name        Nome do site
             og:url              URL para a página
@@ -66,12 +67,15 @@
         <meta property="og:title" content="">
         <meta property="og:description" content="Analista de sistemas especialista em tecnologias WEB e arquitetura de informação.">
         <meta property="og:image" content="">
+        <meta property="og:image:width" content="590" />
+        <meta property="og:image:height" content="440" />
 
 
         <!--
         Twitter Cards
         Otimização para compartilhamento no twitter.
          - Link de referências: https://dev.twitter.com/cards/overview
+         - Gerador: http://webcodetools.com/twitter-card-generator
         -->
         <meta name="twitter:card" content="summary_large_image">
         <meta name="twitter:site" content="@marcusagm">
@@ -84,6 +88,7 @@
 
         <!--
         Favicons
+         - https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html
          - Link de referência: http://tableless.com.br/favicons/
          - Gerador de favicons: http://www.favicon-generator.org/
         -->
@@ -106,6 +111,17 @@
         <meta name="msapplication-TileColor" content="#ffffff">
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
+
+        <!--
+        Personalização da visualização no IOS incluindo imagem splash
+         - https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+         - https://medium.com/@firt/dont-use-ios-web-app-meta-tag-irresponsibly-in-your-progressive-web-apps-85d70f4438cb#.3j4w8l8f0
+         - https://developer.chrome.com/multidevice/android/installtohomescreen
+         - https://developer.chrome.com/multidevice/android/customtabs
+        -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-startup-image" href="img/splash.png">
 
 
 
@@ -130,6 +146,76 @@
         <link rel="alternate" hreflang="en" href="http://www.marcusmaia.com.br/en/blog/article/example" title="Título do artigo em inglês">
         <link rel="alternate" hreflang="fr" href="http://www.marcusmaia.com.br/fr//blog/article/example" title="Título do artigo em francês">
         <link rel="alternate" hreflang="it" href="http://www.marcusmaia.com.br/it/blog/article/example" title="Título do artigo em italiano">
+
+
+        <!--
+        Microdata schema - Structured Data
+        Abaixo criamos uma dados estruturados no formato JSON-LD
+        (http://json-ld.org/). Estes dados estuturados permitem que mecanismos
+        de busca identifiquem e extraiam mais facilmente informações sobre a
+        página. Existem várias possibilidades de como criar esta estutura.
+        Abaico seguem algumas úteis.
+
+        Gerador:
+         - http://microdatagenerator.com/generator.html
+         - https://www.jamesdflynn.com/json-ld-schema-generator/
+         - http://webcodetools.com/json-ld-generator
+
+        Referências:
+         - https://developers.google.com/search/docs/guides/intro-structured-data
+         - https://developers.google.com/search/docs/data-types/reviews#critic-review-guidelines
+         - https://tableless.com.br/linked-data-e-json-ld/
+         - https://thecustomizewindows.com/2014/08/json-ld-details/
+        -->
+        <!--
+        Etrutura de informações de um Wbesite
+        -->
+        <script type='application/ld+json'>
+            {
+                "@context":"http:\/\/schema.org",
+                "@type":"WebSite",
+                "@id":"#website",
+                "name":"Marcus Maia",
+                "url":"http:\/\/www.marcusmaia.com\/",
+                "potentialAction": {
+                    "@type":"SearchAction",
+                    "target":"http:\/\/www.marcusmaia.com\/?s={search_term_string}",
+                    "query-input":"required name=search_term_string"
+                }
+            }
+        </script>
+        <!--
+        Etrutura de informações de um autor
+        -->
+        <script type='application/ld+json'>
+            {
+                "@context":"http:\/\/schema.org",
+                "@type":"Person",
+                "@id":"#person",
+                "name":"Marcus Maia",
+                "alternateName": "marcusagm",
+                "url":"http:\/\/www.marcusmaia.com.br\/",
+                "homepage": "\/\/www.marcusmaia.com.br\/"
+                "sameAs":["https:\/\/twitter.com\/marcusagm"],
+            }
+        </script>
+
+        <!--
+        Etrutura de informações de uma organização
+        -->
+        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "Organization",
+                "url": "http://www.your-company-site.com",
+                "contactPoint": [{
+                    "@type": "ContactPoint",
+                    "telephone": "(31) 3333-4444",
+                    "contactType": "customer service"
+                }]
+            }
+        </script>
+
 
 
         <!-- Importando os CSS de bibliotecas -->
