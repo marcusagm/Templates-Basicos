@@ -168,7 +168,7 @@
          - https://thecustomizewindows.com/2014/08/json-ld-details/
         -->
         <!--
-        Etrutura de informações de um Wbesite
+        Etrutura de informações de um Website
         -->
         <script type='application/ld+json'>
             {
